@@ -3,13 +3,13 @@
 
 <div class="container">
    {% for post in posts %}
-   <div class="card">
+   <div class="card m-5">
      <div class="card-body">
        <h5 class="card-title">{{post.title}}</h5>
        <p class="card-text">{{ post.content}}</p>
      </div>
      <ul class="list-group list-group-flush">
-       <li class="list-group-item"><strong>Author:</strong>{{ post.author}}</li>
+       <li class="list-group-item"><strong>Author: </strong>{{ post.author}}</li>
        <li class="list-group-item"><strong>Date Posted:</strong> {{ post.date_posted|date:"F d, Y" }}</li>
      </ul>
      <div class="card-body">
